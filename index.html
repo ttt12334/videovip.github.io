@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.sjzvip.com/ -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>全网VIP视频在线解析</title>
+    <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,全网视频解析,VIP在线解析,视频VIP在线解析,VIP视频在线解析">
+    <meta name="description"
+          content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将她介绍给您的朋友">
+    <link type="image/x-icon" href="http://www.sjzvip.com/favicon.ico" rel="icon">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/index.css" rel="stylesheet" type="text/css">
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="http://www.sjzvip.com/favicon.ico">
+    <link rel="bookmark" href="http://www.sjzvip.com/favicon.ico">
+    <script type="text/javascript">
+      function dihejk() {
+        var diz = document.getElementById("url").value;
+        var jkurl = document.getElementById("jk");
+        var jk = document.getElementById("jk").selectedIndex;
+        var jkv = jkurl.options[jk].value;
+        var cljurl = document.getElementById("player");
+        cljurl.src = jkv + diz
+      }
+
+      function GetQueryString(name)
+      {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+      }
+      $(function(){
+        if(GetQueryString("url") != null){
+          url = GetQueryString("url")
+          $('#url').val(url)
+          dihejk()
+        }
+
+      })
+
+    </script>
+</head>
+<body><br>
+<div class="container" style="padding-top:0px;" id="wbk">
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+        </button>
+        <strong>复制VIP视频的地址到↓↓↓↓↓栏中点击立即播放就行了！如果不能播放请在选择接口处更改接口!</strong></div>
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg"
+                                                                style="width: 80px; ">选择接口</span><select
+                    class="form-control input-lg" id="jk">
+                <option value="http://api.47ks.com/webcloud/?v=" selected="">爱奇艺、腾讯优酷、乐视、搜狐</option>
+                <option value="http://api.xfsub.com/index.php?url=">通用vip接口1</option>
+                <option value="http://www.sfsft.com/video.php?url=">通用vip接口2</option>
+                <option value="http://www.chepeijian.cn/jiexi/vip.php?url=">通用vip接口3</option>
+            </select></div>
+            <br>
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg" style="width: 80px;">播放地址</span><input
+                    class="form-control input-lg" type="search" placeholder="输入播放地址" id="url"></div>
+            <br>
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">点击播放</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body">
+            <iframe src="./assets/load.html" id="player" width="100%" height="300px" allowtransparency="true"
+                    frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body"><strong>现已支持以下网站视频播放(点击图片可直接跳转)：</strong>
+            <div class="lists">
+                <dl>
+                    <dt><a href="http://www.iqiyi.com/" target="_blank"><img src="./assets/aqylogo.png"></a>
+                    </dt>
+                    <dd>爱奇艺视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.youku.com/" target="_blank"><img
+                            src="./assets/youkulogo.png"></a></dt>
+                    <dd>优酷视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.le.com/" target="_blank"><img src="./assets/letvlogo.png"></a>
+                    </dt>
+                    <dd>乐视TV视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://v.qq.com/" target="_blank"><img src="./assets/qqlogo.png"></a></dt>
+                    <dd>腾讯视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.tudou.com/" target="_blank"><img
+                            src="./assets/tudoulogo.png"></a></dt>
+                    <dd>土豆视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://tv.sohu.com/" target="_blank"><img src="./assets/sohulogo.png"></a>
+                    </dt>
+                    <dd>搜狐视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.56.com/" target="_blank"><img src="./assets/56logo.png"></a></dt>
+                    <dd>56视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.ku6.com/" target="_blank"><img src="./assets/ku6logo.png"></a>
+                    </dt>
+                    <dd>酷6视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.wasu.cn/" target="_blank"><img src="./assets/wasulogo.png"></a>
+                    </dt>
+                    <dd>WASU华数视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.yinyuetai.com/" target="_blank"><img
+                            src="./assets/yinyuetailogo.png"></a></dt>
+                    <dd>音悦台MV</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.mgtv.com/" target="_blank"><img
+                            src="./assets/hunantvlogo.png"></a></dt>
+                    <dd>芒果TV视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://video.sina.com.cn/" target="_blank"><img src="./assets/sinalogo.png"></a>
+                    </dt>
+                    <dd>新浪视频</dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://v.163.com/" target="_blank"><img src="./assets/163logo.png"></a></dt>
+                    <dd>网易视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/6logo.png"></dt>
+                    <dd>6间房视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/kugoulogo.png"></dt>
+                    <dd>酷狗MV视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/baomihualogo.png"></dt>
+                    <dd>爆米花视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/ifenglogo.png"></dt>
+                    <dd>凤凰视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/kankannewslogo.png"></dt>
+                    <dd>看看新闻网视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/mtimelogo.png"></dt>
+                    <dd>时光网视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/kuwologo.png"></dt>
+                    <dd>酷我音乐MV视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/1905logo.png"></dt>
+                    <dd>1905电影网视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/tangdoulogo.png"></dt>
+                    <dd>糖豆视频</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./assets/cntvlogo.png"></dt>
+                    <dd>央视网</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert">本站只提供镜像储存，所提供解析服务均由网上搜集。如侵犯了您的权益请联系我们：2423806988#qq.com(请将#换成@)</div>
+</div>
+<div class="copyright">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">Copyright @ 2016-2017 All Rights Reserved.</div>
+        </div>
+    </div>
+</div>
+<div style="display:none">
+    <script src="./assets/stat.php" language="JavaScript"></script>
+    <script src="./assets/core.php" charset="utf-8" type="text/javascript"></script>
+    <a href="http://www.cnzz.com/stat/website.php?web_id=1261009525" target="_blank" title="站长统计">站长统计</a></div>
+<br></body>
+<div></div>
+</html>
